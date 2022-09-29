@@ -1,0 +1,62 @@
+<html>
+<meta charset="UTF-8">
+
+<head>
+    <title>Read</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <script src="Js.js"></script>
+</head>
+<header>
+    <nav id="menu">
+        <a id="logo" title="Home" href="Home.html"><img src="Logo.png"></a>
+        <ul>
+            <li><a href="Create.html">Create</a></li>
+            <li><a href="Update.html">Update</a></li>
+            <li><a href="Delete.html">Delete</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div id="intro">
+        <div id="titulo">
+            <h1 id="ttitulo">Read</h1>
+        </div>
+        <form name="Read">
+            <div id="formR">
+                <ul>
+                    <li>
+                        <label for="filme">Nome do filme:</label>
+                        <input type="text" id="barraR" name="filme" />
+                    </li>
+                    <br>
+                    <li>
+                        <label for="genero">Genero do filme:</label>
+                        <input type="text" id="barraR" name="genero" />
+                    </li>
+                    <br>
+                    <li>
+                        <label for="duração">Duração do filme:</label>
+                        <input type="text" id="barraR" name="duracao" />
+                    </li>
+                    <br>
+                    <li>
+                        <label for="adulto">Filme adulto:</label>
+                        <input type="checkbox" id="checkbox" />
+                    </li>
+                    <br>
+                    <br>
+                    <input id="button" type="submit" class="pesquisar" onclick="pesquisaradulto()" ; value="Buscar" />
+                </ul>
+            </div>
+        </form>
+        <div id="rodape">
+            <p id="trodape"></p>Dica:</p>
+            <p id="trodape">Essa pagina tem a função de procurar um ou mais filmes do banco de dados!</p>
+            <p id="trodape">Você pode filtrar ou não pelas caracteristicas do filme!</p>
+        </div>
+    </div>
+</body>
+<footer></footer>
+
+</html>

@@ -1,0 +1,42 @@
+<html>
+<meta charset="UTF-8">
+
+<head>
+    <title>Recuperação de conta</title>
+    <link rel="icon" type="image/png" href="..//View/Imagens/Icone.png"/>
+    <link rel="stylesheet" href="estilo.css" />
+    <script src="Js.js"></script>
+</head>
+<header>
+    <nav id="loginMenu">
+        <ul>
+            <a title href="Login.html"><img src="..//View/Imagens/Logo.png"></a>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div id="card">
+        <h1 id="tituloLogin">Recuperação de Senha</h1>
+        <p id="textoSenha">Para recuperar sua senha, informe seu email</p>
+        <div id="homelist">
+            <form name="Read">
+                <div id="formR">
+                    <ul>
+                        <li>
+                            <label id= "usuarioLogin"for="Usuario">E-mail</label>
+                            <input type="text" id="email" name="email" required/>
+                        </li>
+                        <div id="espaco2"></div>
+                        <input id="buttonLogin" type="submit" class="logar" onclick="login(); return false"
+                            value="Recuperar" />
+                        <a id="loginCadastro" href="Login.html">Voltar ao Inicio</a>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<footer></footer>
+
+</html>

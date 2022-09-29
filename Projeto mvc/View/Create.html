@@ -1,0 +1,64 @@
+<html>
+    <meta charset="UTF-8">
+<head>
+    <title>Create</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <script src="Js.js"></script>
+</head>
+<header>
+    <nav id="menu">
+        <a id="logo" title="Home" href="Home.html"><img src="Logo.png"></a>
+        <ul>
+            <li><a href="Read.html">Read</a></li>
+            <li><a href="Update.html">Update</a></li>
+            <li><a href="Delete.html">Delete</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div id="intro">
+        <div id="titulo">
+            <h1 id="ttitulo">Create</h1>
+        </div>
+        <form name="Create" method="post" id="formR">
+            <div id="form">
+                <ul>
+                    <li>
+                        <label for="filme">Nome do filme:</label>
+                        <input type="text" id="barra" required="required" name="filme" />
+                    </li>
+
+                    <li>
+                        <label for="genero">Genero do filme:</label>
+                        <input type="text" id="barra" required="required" name="genero" />
+                    </li>
+
+                    <li>
+                        <label for="duração">Duração do filme:</label>
+                        <input type="text" id="barra" required="required" name="duracao"  />
+                    </li>
+
+                    <li>
+                        <label id= "checkboxlabel" for="adulto">Filme adulto:</label>
+                        <input type="checkbox" id="checkbox" />
+                    </li>
+                    <br>
+                    <li>
+                        <div id="backposter">
+                            <label id="poster" for="file">Adicionar poster</label>
+                            <input type="file" id="file" />
+                        </div>
+                    </li>
+                    <br>
+                    <br>
+                    <input id="button" type="submit" class="pesquisar" onclick="adicionar()" ; value="Criar" />
+                </ul>
+            </div>
+        </form>
+        <div id="rodape"><p id="trodape">oi</p></div>
+    </div>
+</body>
+<footer></footer>
+
+</html>
