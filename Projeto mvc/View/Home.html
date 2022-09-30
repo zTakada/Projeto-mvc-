@@ -1,0 +1,115 @@
+<html>
+<meta charset="UTF-8">
+
+<head>
+    <title>Home</title>
+    <link rel="icon" type="image/png" href="..//View/Imagens/Icone.png" />
+    <link rel="stylesheet" href="estilo.css" />
+    <script src="Js.js"></script>
+</head>
+<header>
+    <nav id="loginMenu">
+        <ul>
+            <a title href="Home.html"><img src="../View/Imagens/Logo.png"></a>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <div id="card3">
+        <div id="barraPesquisa">
+            <form name="formH">
+                <div id="formH">
+                    <ul>
+                        <li>
+                            <label for="filme">Nome do filme:</label>
+                            <input type="text" id="barraF" name="filme" autocomplete="off" />
+                        </li>
+                        <li>
+                            <label for="genero">Gênero do filme:</label>
+                            <select name="barra" id="barraG">
+                                <option value="Ação">Ação</option>
+                                <option value="Aventura">Aventura</option>
+                                <option value="Comedia">Comedia</option>
+                                <option value="Documentario">Documentario</option>
+                                <option value="Drama">Drama</option>
+                                <option value="Ficção cientifica">Ficção cientifica</option>
+                                <option value="Terror">Terror</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="Ano">Ano do filme:</label>
+                            <input type="number" id="barraA" name="duracao" min="1990" max="2022" autocomplete="off" />
+                        </li>
+                        <li>
+                            <label for="filme">Ator/Atriz:</label>
+                            <input type="text" id="barraF" name="ator" autocomplete="off" />
+                        </li>
+                        <li>
+                            <label for="adulto">Filme adulto:</label>
+                            <input type="checkbox" id="checkboxH" />
+                        </li>
+                        <li>
+                            <input id="buttonH" type="submit" class="pesquisar" onclick="pesquisar()" ;
+                                value="Buscar" />
+                        </li>
+                    </ul>
+                    <div id="estilo"></div>
+                </div>
+            </form>
+        </div>
+        <br>
+        <div id="moviespace">
+            <ul id="conteudomovie">
+                <li>
+                    <a
+                        href="https://img.elo7.com.br/product/original/268A683/big-poster-filme-rambo-3-lo001-tamanho-90x60-cm-presente-nerd.jpg">
+                        <img id="posterimage"
+                            src="https://img.elo7.com.br/product/original/268A683/big-poster-filme-rambo-3-lo001-tamanho-90x60-cm-presente-nerd.jpg">
+                    </a>
+                </li>
+                <li id="topicos">
+                    <h3>Nome do filme: </h3>
+                    <p>Rambo III</p>
+                    <br>
+                    <h3>Filme Adulto:</h3>
+                    <p>Não</p>
+                    <h3 id="ano">Ano:</h3>
+                    <p id="ano">1988</p>
+                </li>
+                <li id="topicos2">
+                    <h3>Gênero: </h3>
+                    <p>Ação</p>
+                    <br>
+                    <h3>Elenco:</h3>
+                    <p><a href="#">Sylvester stallone</a></p>
+                    <br>
+                </li>
+                <li id="sinopse">
+                    <h3>Sinopse:</h3>
+                    <p id="counteudosinopse"> O ex-soldado John Rambo recusa um pedido do coronel Trautman,
+                        seu antigo líder de pelotão, para uma nova missão, pensando apenas em
+                        continuar com o seu novo estilo de vida, baseado na crença budista.
+                        No entanto, quando o coronel Trautman é raptado pelos russos na fronteira do Afeganistão
+                        e o governo americano é incapaz de intervir oficialmente,
+                        Rambo decide agir por sua conta e risco.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="menuUsuario">
+        <ul id="fotoUsuarioPos">
+            <li>
+                <img id = "fotoUsuario" src="..//View/Imagens/usuarioExemplo.png">
+            </li>
+            <li id="nomeUsuario">
+                <h4>Usuario Panda</h4>
+                <a id="logOut"href="Login.html">Log out</a>
+            </li>
+        </ul>
+    </div>
+</body>
+<footer></footer>
+
+</html>
